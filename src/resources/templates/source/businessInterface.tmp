@@ -1,0 +1,11 @@
+import IBaseBusiness from './base/IBaseBusiness';
+import {camelName} from '../../model/{pascalName}/{camelName}';
+import {camelName}Create from '../../model/{pascalName}/{camelName}Create'; // eslint-disable-line
+import {camelName}Update from '../../model/{pascalName}/{camelName}Update'; // eslint-disable-line
+
+interface I{camelName}Business extends IBaseBusiness<{camelName}> {
+    create: (item: {camelName}Create) => Promise<{camelName}>;
+    update: (_id: string, item: {camelName}Update) => Promise<{camelName} | null>;
+}
+
+export default I{camelName}Business;
